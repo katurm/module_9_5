@@ -1,7 +1,3 @@
-from cgitb import reset
-from turtledemo.penrose import start
-
-
 class StepValueError(ValueError):
     pass
 
@@ -12,7 +8,6 @@ class Iterator:
         self.start = start
         self.stop = stop
         self.step =  step
-
 
     def __iter__(self):
         self.pointer = self.start
